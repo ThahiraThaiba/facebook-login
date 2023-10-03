@@ -10,7 +10,7 @@
   <body>
     <div class="global-container">
       <div class="registration-form-container">
-        <div class="close-btn">&times;</div>
+        <div id="close-btn">&times;</div>
         <div class="header-section">
           <div id="sign-up">Sign Up</div>
           <div id="slogan">Its quick and easy.</div>
@@ -122,27 +122,28 @@
                 <option value="1990">1990</option>
               </select>
             </div>
-            <div class="gender-box">
-              <div class="gender">Gender</div>
-              <div>
-                <input type="radio" id="female" name="gender" value="Female" />
-                <label for="female">Female</label><br />
-
-                <input type="radio" id="male" name="gender" value="Male" />
-                <label for="male">Male</label><br />
+            <div class="gender-container">
+              <div id="gender-title">Gender</div>
+              <div class="gender-boxes">
+              <div id="female-box">
+              <input type="radio" id="female" name="gender-selector">
+              <label for="female">Female</label>
               </div>
-            </div>
+              <div id="male-box">
+              <input type="radio" id="male" name="gender-selector">
+              <label for="male">Male</label>
+              
+              </div>
+              </div>
+              </div>
+          <div class="sign-up-btn">
+            <button class="sign-up">Sign-Up</button>
           </div>
-          <button class="sign-up">Sign-Up</button>
         </div>
       </div>
     </div>
-    <script>
-      let container = document.querySelector(".registration-form-container");
-      let closeBtn = document.getElementById("close-btn");
-      closeBtn.addEventListener("click", function () {
-        container.style.display = "none";
-      });
-    </script>
   </body>
 </html>
+
+
+

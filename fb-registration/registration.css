@@ -1,22 +1,24 @@
 .global-container{
   height:100vh;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .registration-form-container{
   
-  color: #8d949e;
+  color: lightgrey;
   background-color: white;
-  width:35%;
+  width:30%;
   height:70%;
   padding:10px 16px;
-  border: 1px solid grey;
+  border: 1px  grey;
+  box-shadow: 3px 4px 20px #363738;
 
   position:relative;
 }
 
-.close-btn{
+#close-btn{
   position: absolute;
   top: 5px;
   right:10px;
@@ -27,7 +29,8 @@
 .header-section{
   margin:0;
   padding:10px 16px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-weight:lighter;
   height:55px;
 }
 
@@ -39,6 +42,10 @@
   margin-top:0;
   color:grey;
   font-size: 18px;
+}
+
+hr{
+  border: 1px solid lightgrey;
 }
 .full-name{
   display:flex;
@@ -74,14 +81,45 @@ margin-top: 0;
 }
 
 .date-of-birth{
-  color:#1c1e21;
+  color:grey;
   font:12px;
 }
 
 .dob{
-  width:130px;
+  width:110px;
   height:40px;
+  border-color: #dddfe2;
 }
-.gender-box{
+
+.gender-container{
   color:#1c1e21;
+  width:100%;
+  height:80px;
+}
+#gender-title{
+  margin: 4px auto;
+}
+.gender-boxes{
+  display:flex;
+}
+#female-box,
+#male-box{
+  border:1px solid #dddfe2;
+  padding:3px;
+  margin-right:6px;
+  width:250px;
+  font-size:18px;
+  line-height:1.5;
+}
+
+.sign-up{
+  background-color: green;
+  border:none;
+  border-radius: 8px;
+  color:white;
+  font:  20px Arial, sans-serif;
+  line-height: 1;
+  width:50%;
+  height:40px;
+  transform: translate(50%, -5px);
 }
